@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package api.v1;
+option go_package = "mihailbuslaev/pb-wrapper/service";
+
+message getCompanyRequest {
+    int64 inn = 1;
+}
+
+message getCompanyResponse {
+    int64 inn = 1;
+    int64 kpp = 2;
+    string title = 3;
+    string ownerName = 4;
+}
+
+service Server {
+  rpc getCompany (getCompanyRequest) returns (getCompanyResponse) {}
+}

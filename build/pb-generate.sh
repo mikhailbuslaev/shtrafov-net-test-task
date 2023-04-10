@@ -1,0 +1,1 @@
+protoc api/v1/api.proto --go_out=pkg --go_opt=paths=source_relative
