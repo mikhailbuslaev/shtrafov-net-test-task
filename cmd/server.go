@@ -4,7 +4,7 @@ import (
 	"mihailbuslaev/pb-wrapper/internal/server"
 	"net"
 
-	service "mihailbuslaev/pb-wrapper/pkg/api/v1"
+	service "mihailbuslaev/pb-wrapper/pkg/api"
 
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"

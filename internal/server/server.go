@@ -2,7 +2,7 @@ package server
 
 import (
 	"context"
-	service "mihailbuslaev/pb-wrapper/pkg/api/v1"
+	service "mihailbuslaev/pb-wrapper/pkg/api"
 )
 
 type grpcServerImplement struct {

@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v3.21.12
-// source: api/v1/api.proto
+// source: api/api.proto
 
 package service
 
@@ -19,7 +19,7 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	RouteGuide_GetCompany_FullMethodName = "/api.v1.RouteGuide/GetCompany"
+	RouteGuide_GetCompany_FullMethodName = "/api.RouteGuide/GetCompany"
 )
 
 // RouteGuideClient is the client API for RouteGuide service.
@@ -96,7 +96,7 @@ func _RouteGuide_GetCompany_Handler(srv interface{}, ctx context.Context, dec fu
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var RouteGuide_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "api.v1.RouteGuide",
+	ServiceName: "api.RouteGuide",
 	HandlerType: (*RouteGuideServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -105,5 +105,5 @@ var RouteGuide_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "api/v1/api.proto",
+	Metadata: "api/api.proto",
 }
