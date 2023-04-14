@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  sntt:
+    build:
+      context: ./build
+      dockerfile: Dockerfile
+    image: sntt
+    container_name: sntt
+    environment:
+      TCPADDR: "80"

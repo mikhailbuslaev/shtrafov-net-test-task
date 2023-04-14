@@ -1,4 +1,4 @@
-module mihailbuslaev/pb-wrapper
+module mihailbuslaev/sntt
 
 go 1.19
 
