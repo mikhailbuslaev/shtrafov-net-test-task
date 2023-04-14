@@ -2,9 +2,9 @@ version: "3.9"
 services:
   sntt:
     build:
-      context: ./build
-      dockerfile: Dockerfile
-    image: sntt
-    container_name: sntt
+      context: ./
+      dockerfile: ./build/Dockerfile
     environment:
-      TCPADDR: "80"
+      TCPADDR: "localhost:1111"
+    entrypoint: "sntt"
+    command: [server]

@@ -17,7 +17,7 @@ func (c *Config) Prepare() (err error) {
 func (c *Config) Flags() *pflag.FlagSet {
 	f := pflag.NewFlagSet("", pflag.PanicOnError)
 	// ENV TCPADDR
-	f.StringVar(&c.TcpAddr, "port", "80", "port for server")
+	f.StringVar(&c.TcpAddr, "tcp_addr", "", "tcp address for server")
 
 	return f
 }
