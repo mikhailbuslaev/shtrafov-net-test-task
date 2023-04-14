@@ -1,6 +1,6 @@
 package main
 
-import "mihailbuslaev/pb-wrapper/cmd"
+import "mihailbuslaev/sntt/cmd"
 
 func main() {
 	cmd.Execute()
