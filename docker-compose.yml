@@ -6,5 +6,6 @@ services:
       dockerfile: ./build/Dockerfile
     environment:
       TCPADDR: "localhost:1111"
+      HTTPPORT: ":2222"
     entrypoint: "sntt"
     command: [server]

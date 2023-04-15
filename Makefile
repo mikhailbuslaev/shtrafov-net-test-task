@@ -5,7 +5,6 @@ BUILD_TARGET=$(MAKEFILE_PATH)/bin/sntt
 GREEN_COLOR   = "\033[0;32m"
 DEFAULT_COLOR = "\033[m"
 
-	@export PATH=$PATH:$GOROOT:$GOPATH:$GOBIN
 
 .PHONY: env test build docker protoc
 
@@ -26,6 +25,7 @@ docker:
 	@echo -e $(GREEN_COLOR)[docker build done]$(DEFAULT_COLOR)
 
 protoc:
+	@export PATH=$PATH:$GOROOT:$GOPATH:$GOBIN
 	@echo -e $(GREEN_COLOR)[protoc generation running...]$(DEFAULT_COLOR)
 	@protoc ./api/api.proto \
 	--go_out=./pkg \

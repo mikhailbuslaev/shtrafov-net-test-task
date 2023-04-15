@@ -22,5 +22,7 @@ func Execute() {
 }
 
 func init() {
+	ServerCmd.Flags().AddFlagSet(cfg.Flags())
+
 	Cmd.AddCommand(ServerCmd)
 }
