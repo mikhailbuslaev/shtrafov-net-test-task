@@ -33,6 +33,7 @@ protoc:
 	--grpc-gateway_out=./pkg \
 	--go_opt=paths=source_relative  \
 	--go-grpc_opt=paths=source_relative \
+	--grpc-gateway_opt=paths=source_relative \
 	--grpc-gateway_opt generate_unbound_methods=true \
 	--openapiv2_out ./swaggerui
 	@echo -e $(GREEN_COLOR)[protoc generation done]$(DEFAULT_COLOR)

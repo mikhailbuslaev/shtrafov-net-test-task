@@ -15,7 +15,39 @@
   "produces": [
     "application/json"
   ],
-  "paths": {},
+  "paths": {
+    "/company/{inn}": {
+      "get": {
+        "operationId": "RouteGuide_GetCompany",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/apigetCompanyResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "inn",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+        "tags": [
+          "RouteGuide"
+        ]
+      }
+    }
+  },
   "definitions": {
     "apigetCompanyResponse": {
       "type": "object",
