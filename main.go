@@ -1,6 +1,8 @@
 package main
 
-import "mihailbuslaev/sntt/cmd"
+import (
+	"mihailbuslaev/sntt/cmd"
+)
 
 func main() {
 	cmd.Execute()
